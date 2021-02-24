@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8" />
+		<title>--------Isabella Smith-----------</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+		<script src="script.js"></script> 
+		<link href="style.css" rel="stylesheet" />
+	</head>
+	
+	<body id="bod">
+		<header>
+			<div id="list">
+				<ul>
+					<li>I</li>
+					<li>S</li>
+					<li>A</li>
+					<li>B</li>
+					<li>E</li>
+					<li>L</li>
+					<li>L</li>
+					<li>A</li>
+					<li>&nbsp</li>
+					<li>S</li>
+					<li>M</li>
+					<li>I</li>
+					<li>T</li>
+					<li>H</li>
+				</ul>
+			</div>
+		</header>
+	
+		<div class="container">
+			<div class="project" onClick="show1()">
+				<img class="img" src="images/cube.png" alt="Rubik's Cube"></img>
+				<div class="desc">
+					<div class="desc-title">Rubik's Cube Solver</div>
+				</div>
+			</div>
+			
+			<div class="project" onClick="show2()">
+				<img class="img" src="images/steg.png" alt="Steganography Graphic"></img>
+				<div class="desc">
+					<div class="desc-title">Steganography with Images</div>
+				</div>
+			</div>
+			
+			<div class="project" onClick="show3()">
+				<img class="img" src="images/enc.png" alt="Encryption Graphic"></img>
+				<div class="desc">
+					<div class="desc-title">AES Encryption</div>
+				</div>
+			</div>
+			
+			<div class="project" onClick="show4()">
+				<img class="img" src="images/pass.png" alt="Password Graphic"></img>
+				<div class="desc">
+					<div class="desc-title">Password Cracker</div>
+				</div>
+			</div>
+			
+			<!--
+			<div class="project" onClick="show()">
+				<img class="img" src="images/sch.png" alt="Schedule Graphic"></img>
+				<div class="desc">
+					<div class="desc-title">Schedule Builder</div>
+				</div>
+			</div>
+			
+			<div class="project" onClick="show()">
+				<img class="img" src="images/ann.png" alt="ANN Graphic"></img>
+				<div class="desc">
+					<div class="desc-title">Artificial Neural Network</div>
+				</div>
+			</div>
+			-->
+		</div>
+		
+		<footer>
+			<div id="container2">
+				<div>bellasmith34.run@gmail.com</div>
+			</div>
+		</footer>
+		
+		
+		<div class="background" id="background1" style="display:none;">
+			<div class="popup">
+				<img class="close" onClick="hide1()" src="images/close-icon.svg" alt="Close"></img>
+				<div class="head">
+					<div>Rubik's Cube Solver</div>
+				</div>
+				<div class="body">
+					<img class="popupimg" src="images/cube.png" alt="Rubik's Cube"></img>
+					<div class="popupdesc">
+						<div>
+							<p>For this project, I wrote an algorithm that computationally solves a randomly scrambled Rubik's Cube.</p>
+							<a href="cube.html">Demo</a>
+							<a href="https://github.com/bellasmith21/rubikscube-solver.git">Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="background" id="background2" style="display:none;">
+			<div class="popup">
+				<img class="close" onClick="hide2()" src="images/close-icon.svg" alt="Close"></img>
+				<div class="head">
+					<div>Steganography</div>
+				</div>
+				<div class="body">
+					<img class="popupimg" src="images/steg.png" alt="Rubik's Cube"></img>
+					<div class="popupdesc">
+						<div>
+							<p>This program takes in an image and string of text, and secretely embeds the text into the image.  The embedText algorithm manipulates the least significant bit of the RGB value of each pixel, so shorter text embedding is relatively imperceptible.  For longer text documents, the program will continue to change the next least significant digit.</p>
+							<a href="steg.html">Demo</a>
+							<a href="https://github.com/bellasmith21/image-steganography.git">Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="background" id="background3" style="display:none;">
+			<div class="popup">
+				<img class="close" onClick="hide3()" src="images/close-icon.svg" alt="Close"></img>
+				<div class="head">
+					<div>AES Encryption</div>
+				</div>
+				<div class="body">
+					<img class="popupimg" src="images/enc.png" alt="Rubik's Cube"></img>
+					<div class="popupdesc">
+						<div>
+							<p>This program takes in a given string of text and returns an encrypted version of the text using 128 bit AES (Advanced Encryption Standard) used across the web.</p>
+							<!--<a href="">Demo</a>-->
+							<a href="https://github.com/bellasmith21/AES.git">Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="background" id="background4" style="display:none;">
+			<div class="popup">
+				<img class="close" onClick="hide4()" src="images/close-icon.svg" alt="Close"></img>
+				<div class="head">
+					<div>Password Cracker</div>
+				</div>
+				<div class="body">
+					<img class="popupimg" src="images/pass.png" alt="Rubik's Cube"></img>
+					<div class="popupdesc">
+						<div>
+							<p>Goal: I want to build a program that will take in a large list of hashed passwords and crack them with a number of different methods: dictionary comparisons, brute force, and precomputed rainbow tables.</p>
+							<!--<a href="">Demo</a>-->
+							<!--<a href="">Github</a>-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
