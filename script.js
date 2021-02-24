@@ -445,5 +445,5 @@ function statrtrotation(){
 
 /*STEGANOGRAPHY*/
 function displayImage(newimg){
-	document.getElementById("image2").src = "steg/"+newimg+".jpg";
+	document.getElementById("image2").src = newimg+".jpg";
 }
